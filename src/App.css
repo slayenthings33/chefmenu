@@ -53,6 +53,27 @@
 #logoContainer{
   margin-left: 50px;
 }
+#formSectionContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border: dotted red 3px;
+}
+#imageFormContainer {
+  border: red dotted 2px;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.formElementContainer {
+  margin: 10px;
+  padding: 15px;
+
+  border:turquoise 2px dotted;
+
+}
 
 
 

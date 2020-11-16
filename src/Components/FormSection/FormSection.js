@@ -29,7 +29,7 @@ class FormSection extends Component {
 
   render() {
     return (
-      <div>
+      <div id="formSectionContainer">
         <Nombre label={this.state.nombre}/>
         <Descripcion label={this.state.descripcion}/>
         <Precio label={this.state.precio}/>

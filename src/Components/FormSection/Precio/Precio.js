@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import './Precio.css';
 
 class Precio extends Component {
-  // constructor(props){
-    // super(props);
-    // this.state = {};
-  // }
+  constructor(props){
+    super(props);
+    this.state = {
+      label: this.props.label,
+    };
+  }
 
   // componentWillMount(){}
   // componentDidMount(){}
@@ -18,7 +20,16 @@ class Precio extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        <div className="formElementContainer" id="precioContainer">
+        <form>
+          <label>
+            <p className="formLabel">{this.state.label}</p>
+            <input type="text" name="name" />
+          </label>
+        </form>
+      </div>
+      </div>
     );
   }
 }
