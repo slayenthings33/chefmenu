@@ -29,7 +29,14 @@
 /**********************************/
 /**********GENERAL STYLING*********/
 /**********************************/
-
+.formElementContainer form input {
+  border-radius: 15px;
+  height: 20px;
+  padding: 5px;
+}
+#imageSubmitBtn{
+  height: 35px;
+}
 
 
 /**********************************/
@@ -38,7 +45,7 @@
 
 .bannerContainer {
   height: 60%;
-  background-color: #282c34;
+  background-color: #30558A;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,6 +61,7 @@
   margin-left: 50px;
 }
 #formSectionContainer{
+  background-color: #30558A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,18 +69,20 @@
   border: dotted red 3px;
 }
 #imageFormContainer {
-  border: red dotted 2px;
-  width: 30%;
+  width: 20%;
+  height: 150px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 .formElementContainer {
   margin: 10px;
   padding: 15px;
-
-  border:turquoise 2px dotted;
-
+  border:#BA3F38 4px solid;
+  border-radius: 20px;
+  background-color: #F2B844;
+  box-shadow: #3988BF 5px 5px;
 }
 
 
@@ -82,6 +92,10 @@
 /************TEXT STYLING**********/
 /**********************************/
 .formLabel {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.platoOptions {
   text-transform: capitalize;
 }
 

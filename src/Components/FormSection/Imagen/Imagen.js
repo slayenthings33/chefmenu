@@ -5,7 +5,9 @@ import Form from 'react-bootstrap/Form';
 class Imagen extends Component {
   constructor(props){
     super(props);
-    this.state = {};
+    this.state = {
+      uploadMessage: 'Subir fichero',
+    };
   }
 
   // componentWillMount(){}
@@ -20,14 +22,22 @@ class Imagen extends Component {
   render() {
     return (
       <div className="formElementContainer" id="imageFormContainer">
-        <Form>
-          <Form.Group>
-          <Form.File id="exampleFormControlFile1" label="Example file input" />
-          </Form.Group>
-        </Form>
+        <form>
+          <label>
+            <p className="formLabel">{this.state.uploadMessage}</p>
+            <input id='imageSubmitBtn' type="submit" name="name" />
+            <p id='uploadStatus'>Ningún archivo seleccionado</p>
+          </label>
+        </form>
       </div>
     );
   }
 }
 
 export default Imagen;
+
+{/* <Form>
+  <Form.Group>
+  <Form.File id='imageForm' label="Selecciona fichero" custom='true' />
+  </Form.Group>
+</Form> */}

@@ -5,6 +5,7 @@ import Descripcion from './Descripcion/Descripcion';
 import Precio from './Precio/Precio';
 import Plato from './Plato/Plato';
 import Imagen from './Imagen/Imagen';
+import FormSectionBtn from './FormSectionBtn/FormSectionBtn';
 
 class FormSection extends Component {
   constructor(props){
@@ -35,6 +36,7 @@ class FormSection extends Component {
         <Precio label={this.state.precio}/>
         <Plato label={this.state.plato}/>
         <Imagen label={this.state.imagen}/>
+        <FormSectionBtn/>
       </div>
     );
   }
