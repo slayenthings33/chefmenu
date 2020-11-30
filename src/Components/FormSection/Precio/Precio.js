@@ -25,7 +25,7 @@ class Precio extends Component {
         <form>
           <label>
             <p className="formLabel">{this.state.label}</p>
-            <input type="text" name="name" />
+            <input id='dishPriceInput' type="text" name="name" value='' />
           </label>
         </form>
       </div>

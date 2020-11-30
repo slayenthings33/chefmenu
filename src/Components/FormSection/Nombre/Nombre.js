@@ -25,7 +25,7 @@ class Nombre extends Component {
          <form>
           <label>
             <p className="formLabel">{this.state.label}</p>
-            <input type="text" name="name" />
+            <input id='dishNameInput' value='' type="text" name="name" />
           </label>
         </form>
       </div>

@@ -21,9 +21,8 @@ class Plato extends Component {
         <form>
           <label>
             <p className="formLabel">{this.state.label}</p>
-            <select>
-              <option value="select" className="platoOptions">-- seleccione
-</option>
+            <select id='dishPlatoInput' value=''>
+              <option value="select" className="platoOptions">-- seleccione --</option>
               <option value="aperitivo" className="platoOptions">aperitivo</option>
               <option value="vegetariano" className="platoOptions">vegetariano</option>
               <option value="tostas" className="platoOptions">tostas</option>

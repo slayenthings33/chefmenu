@@ -15,7 +15,7 @@ class Descripcion extends Component {
         <form>
           <label>
             <p className="formLabel">{this.state.label}</p>
-            <input type="text" name="name" />
+            <input id='dishDescriptionInput' type="text" name="description" value='' />
           </label>
         </form>
       </div>

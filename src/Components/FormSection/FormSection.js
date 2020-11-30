@@ -31,12 +31,14 @@ class FormSection extends Component {
   render() {
     return (
       <div id="formSectionContainer">
-        <Nombre label={this.state.nombre}/>
-        <Descripcion label={this.state.descripcion}/>
-        <Precio label={this.state.precio}/>
-        <Plato label={this.state.plato}/>
-        <Imagen label={this.state.imagen}/>
-        <FormSectionBtn/>
+        <div id="formInputRow">
+          <Nombre label={this.state.nombre}/>
+          <Descripcion label={this.state.descripcion}/>
+          <Precio label={this.state.precio}/>
+          <Plato label={this.state.plato}/>
+          <Imagen label={this.state.imagen}/>
+        </div>
+          <FormSectionBtn/>
       </div>
     );
   }

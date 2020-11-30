@@ -25,8 +25,9 @@ class Imagen extends Component {
         <form>
           <label>
             <p className="formLabel">{this.state.uploadMessage}</p>
-            <input id='imageSubmitBtn' type="submit" name="name" />
-            <p id='uploadStatus'>Ningún archivo seleccionado</p>
+            <input id='imageSubmitInput' type="text"/>
+            <input id='imageSubmitBtn' className='formSectionBtns' type="submit"/>
+            <p id='imgUploadStatus'>Ningún archivo seleccionado</p>
           </label>
         </form>
       </div>

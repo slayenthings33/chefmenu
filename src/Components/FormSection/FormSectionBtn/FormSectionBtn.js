@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './FormSectionBtn.css';
-
+import AddDishBtn from './AddDishBtn/AddDishBtn'
+import GenerateQRBtn from './GenerateQRBtn/GenerateQRBtn';
 class FormSectionBtn extends Component {
   // constructor(props){
     // super(props);
@@ -18,7 +19,10 @@ class FormSectionBtn extends Component {
 
   render() {
     return (
-      <div></div>
+      <div id='formBtnRow'>
+        <AddDishBtn/>
+        <GenerateQRBtn/>
+      </div>
     );
   }
 }
